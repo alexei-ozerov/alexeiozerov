@@ -6,9 +6,9 @@ import Animation from "@/components/animation";
 export default function Page() {
     return (
         <div
-            className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+            className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
             <div className="flex flex-col gap-x-8 gap-y-2 row-start-2 justify-between">
-                <div className="flex flex-row gap-8 justify-between">
+                <div className="flex flex-row gap-8 justify-between flex-wrap">
                     <Link className="hover:underline hover:underline-offset-4" href="/">about</Link>
                     <Link className="hover:underline hover:underline-offset-4" href="/">inspiration</Link>
                     <Link className="hover:underline hover:underline-offset-4" href="/">recordings</Link>

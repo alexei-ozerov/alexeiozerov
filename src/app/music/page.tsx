@@ -7,7 +7,8 @@ export default function Page() {
     return (
         <div
             className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-            <div className="flex flex-col gap-x-8 gap-y-2 row-start-2 justify-between">
+            <Animation />
+            <div className="flex flex-col gap-x-8 gap-y-2 row-start-2 justify-between flex-wrap">
                 <div className="flex flex-row gap-8 justify-between">
                     <Link className="hover:underline hover:underline-offset-4" href="/music/bv">borrowed voices</Link>
                     <Link className="hover:underline hover:underline-offset-4" href="/music/mwle">many worlds large
@@ -19,7 +20,6 @@ export default function Page() {
                     </Link>
                 </div>
             </div>
-            <Animation />
             <FooterContent />
         </div>
 
