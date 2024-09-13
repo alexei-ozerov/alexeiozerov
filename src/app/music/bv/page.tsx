@@ -17,10 +17,11 @@ export default function Page() {
                         borrowed voices
                     </Link>
                 </div>
-                <div className="max-w-md">
-                    <p className="italic">
-                        a small ensemble project focused on mixing acoustic and electronic instruments in a recorded
-                        setting
+                <div className="flex flex-wrap max-w-[450px]">
+                    <p className="italic text-justify">
+                        a small ensemble project focused on mixing acoustic and electronic instruments in a home
+                        recording
+                        setting - using what is on hand to create something moving
                     </p>
                 </div>
             </div>

@@ -17,16 +17,13 @@ export default function Page() {
                         <h1 className="text-6xl">
                             many worlds
                         </h1>
-                        <h2 className="text-6xl tracking-tight text-justify">
-                            large ensemble
-                        </h2>
                     </Link>
-                    <div className="flex flex-wrap text-justify content-center self-center max-w-sm">
+                    <div className="flex flex-wrap max-w-[350px]">
                         <div>
-                            <p className="italic">
-                                an open source initiative with the goal of documenting and making available the
+                            <p className="italic text-justify">
+                                an open source project with the goal of documenting and making available the
                                 process
-                                of composing for, organizing, rehearsing an ensemble consisting of winds, brass, strings
+                                of composing for, organizing, and rehearsing an ensemble consisting of winds, brass, strings
                                 and rhythm section
                             </p>
                         </div>
