@@ -19,14 +19,12 @@ export default function Page() {
                         </h1>
                     </Link>
                     <div className="flex flex-wrap max-w-[350px]">
-                        <div>
-                            <p className="italic text-justify">
-                                an open source project with the goal of documenting and making available the
-                                process
-                                of composing for, organizing, and rehearsing an ensemble consisting of winds, brass, strings
-                                and rhythm section
-                            </p>
-                        </div>
+                        <p className="italic text-justify">
+                            an open source project with the goal of documenting and making available the
+                            process
+                            of composing for, organizing, and rehearsing an ensemble consisting of winds, brass, strings
+                            and rhythm section
+                        </p>
                     </div>
                 </div>
             </div>

@@ -18,11 +18,15 @@ export default function Home() {
                       alexei ozerov
                   </Link>
               </div>
-              <div className="rotate-180 opacity-70 self-center">
-                  <Waveform/>
+              <div className="flex flex-wrap max-w-[370px]">
+                  <div>
+                      <p className="italic text-justify">
+                          trumpet player, composer, synth enthusiast, open source supporter, and friend <b>(they / them)</b>
+                      </p>
+                  </div>
               </div>
           </div>
-        <FooterContent/>
+          <FooterContent/>
       </div>
 
   );
