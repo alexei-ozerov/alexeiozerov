@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 import FooterContent from "@/components/footer";
-import Waveform from "@/components/waveform";
 
 export default function Home() {
     return (
