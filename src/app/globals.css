@@ -14,12 +14,20 @@
     --text: #151515;
 
     /*temp bg*/
-    --bg: #F0DBA5;
+    --bg: rgba(245, 169, 184, 0.64);
+    --blobcol: #cba1e1;
+
+    /*additional colors*/
+    --yellow-haze: #F0DBA5;
 
     /*blob colors*/
-    --yellow: #EDB74D;
+    --yellow: #FCF434;
     --red: #EB6666;
     --green: #6FB18A;
+    --gray: #9e9e9e;
+    --raisin: #2C2C34;
+
+    --blobcol: #f1d1ff;
 
     /*trans colors*/
     --pink: #F5A9B8;
@@ -28,10 +36,13 @@
   }
 }
 
+html { height:100%; }
+
 body {
   color: var(--background);
   background: var(--bg);
   font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
 }
 
 @layer utilities {
@@ -46,16 +57,18 @@ Taken from Juxtopposed's codepen project: https://codepen.io/Juxtopposed/pen/Baq
 */
 body::before,
 body::after {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   content: '';
   width: 100%;
-  height: 100%;
+  height: 100dvh;
   z-index: -1;
 
   opacity: 40%;
 }
+
+
 
 body::before {
   background: #8C8C8C;
@@ -63,34 +76,34 @@ body::before {
 }
 
 .yellow {
-  background-color: var(--yellow);
+  background-color: var(--blobcol);
   position: absolute;
   top: 200px;
   left: 100px;
-  height: 200px;
-  width: 200px;
+  height: 300px;
+  width: 300px;
 
   animation: yellow 8s infinite ease;
 }
 
 .green {
-  background-color: var(--green);
+  background-color: var(--blobcol);
   position: absolute;
   top: 80px;
   right: -20px;
-  height: 200px;
-  width: 250px;
+  height: 300px;
+  width: 350px;
 
   animation: green 8s infinite ease;
 }
 
 .red {
-  background-color: var(--red);
+  background-color: var(--blobcol);
   position: absolute;
   right: 0;
   top: 300px;
-  height: 250px;
-  width: 200px;
+  height: 350px;
+  width: 300px;
 
   animation: red 8s infinite linear;
 }

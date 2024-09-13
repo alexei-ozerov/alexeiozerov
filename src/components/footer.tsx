@@ -21,7 +21,7 @@ export default function FooterContent() {
     </a>
     <a
     className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-    href="https://github.com/alexei-ozerov/alexeiozerov"
+    href="mailto:alexei.ozerov.7@gmail.com"
     target="_blank"
     rel="noopener noreferrer"
         >
