@@ -17,21 +17,19 @@ export default function Page() {
                         <Link className="hover:underline hover:underline-offset-4" href="/">recordings</Link>
                         <Link className="hover:underline hover:underline-offset-4" href="/">documentation</Link>
                     </div>
-                    <div className="flex flex-col gap-8">
-                        <Link className="font-bold leading-tight text-center self-center" href="/music">
-                            <h1 className="text-6xl">
-                                many worlds
-                            </h1>
+                    <div className="flex flex-col gap-8 content-stretch">
+                        <Link className="text-6xl font-bold leading-tight text-center self-center" href="/music">
+                            many worlds
                         </Link>
-                        <div className="flex flex-wrap max-w-[350px]">
-                            <p className="italic text-justify">
-                                an open source large ensemble project with the goal of documenting and making available
-                                the
-                                process of composing for, organizing, and rehearsing an ensemble consisting of winds,
-                                brass,
-                                strings and rhythm section
-                            </p>
-                        </div>
+                    </div>
+                    <div className="flex flex-wrap max-w-[350px]">
+                        <p className="italic text-justify">
+                            an open source large ensemble project with the goal of documenting and making available
+                            the
+                            process of composing for, organizing, and rehearsing an ensemble consisting of winds,
+                            brass,
+                            strings and rhythm section
+                        </p>
                     </div>
                 </motion.div>
             </div>
