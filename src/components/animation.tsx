@@ -4,11 +4,11 @@ export default function Animation() {
             {/*
             Noise SVG taken from Juxtopposed's codepen project: https://codepen.io/Juxtopposed/pen/BaqLEQY
           */}
-            <div className="blob-cont">
-                <div className="yellow blob"></div>
-                <div className="red blob"></div>
-                <div className="green blob"></div>
-            </div>
+            {/*<div className="blob-cont">*/}
+            {/*    <div className="yellow blob"></div>*/}
+            {/*    <div className="red blob"></div>*/}
+            {/*    <div className="green blob"></div>*/}
+            {/*</div>*/}
             <svg>
                 <filter id='noiseFilter'>
                     <feTurbulence

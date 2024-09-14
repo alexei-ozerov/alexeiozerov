@@ -36,8 +36,6 @@ export default function Page() {
                 </motion.div>
             </div>
             <FooterContent/>
-
         </div>
-
     );
 }
