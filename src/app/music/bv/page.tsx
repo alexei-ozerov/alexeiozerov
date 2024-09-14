@@ -1,8 +1,28 @@
-import Link from "next/link";
 import * as motion from "framer-motion/client"
 import FooterContent from "@/components/footer";
+import {Navigation, NavProps} from "@/components/navigation";
+import {Header} from "@/components/header";
+import {Description} from "@/components/description";
 
 export default function Page() {
+    const links: NavProps = [
+        {
+            linkPath: "/music",
+            linkText: "about"
+        },
+        {
+            linkPath: "/music",
+            linkText: "recordings"
+        },
+        {
+            linkPath: "/music",
+            linkText: "documentation"
+        }];
+
+    const descriptions: string[] = [
+        "a small ensemble project focused on mixing acoustic and electronic instruments in a home recording setting - using what is on hand to create something moving",
+    ]
+
     return (
         <div
             className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
@@ -12,23 +32,9 @@ export default function Page() {
                     animate={{opacity: 1, scale: 1}}
                     transition={{duration: 0.5}}
                 >
-                    <div className="flex flex-row gap-8 justify-between flex-wrap">
-                        <Link className="hover:underline hover:underline-offset-4" href="/">about</Link>
-                        <Link className="hover:underline hover:underline-offset-4" href="/">recordings</Link>
-                        <Link className="hover:underline hover:underline-offset-4" href="/">documentation</Link>
-                    </div>
-                    <div className="flex flex-col gap-8 content-stretch">
-                        <Link className="text-6xl font-bold leading-tight self-center object-fill" href="/music">
-                            borrowed voices
-                        </Link>
-                    </div>
-                    <div className="flex flex-wrap max-w-[450px]">
-                        <p className="italic text-justify">
-                            a small ensemble project focused on mixing acoustic and electronic instruments in a home
-                            recording
-                            setting - using what is on hand to create something moving
-                        </p>
-                    </div>
+                    <Navigation data={links}/>
+                    <Header linkPath={"/music"} headerText={"borrowed voices"}/>
+                    <Description data={descriptions} size={"max-w-[500px]"}/>
                 </motion.div>
             </div>
             <FooterContent/>
