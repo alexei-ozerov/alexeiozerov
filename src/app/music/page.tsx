@@ -1,7 +1,6 @@
 import Link from "next/link";
 import * as motion from "framer-motion/client"
 import FooterContent from "@/components/footer";
-import Animation from "@/components/animation";
 
 export default function Page() {
     return (
