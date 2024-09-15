@@ -35,7 +35,7 @@ export default function Home() {
                 >
                     <Navigation data={links}/>
                     <Header linkPath={"/"} headerText={"alexei ozerov"}/>
-                    <Description data={descriptions} size={"md:max-w-[390px] xl:max-w-[700px]"}/>
+                    <Description data={descriptions} size={"md:max-w-[390px] xl:max-w-[700px] xl:pt-5"}/>
                 </motion.div>
             </div>
             <FooterContent/>

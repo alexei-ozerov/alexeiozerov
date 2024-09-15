@@ -36,7 +36,7 @@ export default function Page() {
                 >
                     <Navigation data={links}/>
                     <Header linkPath={"/"} headerText={"arts projects"}/>
-                    <Description data={descriptions} size={"max-w-[355px] xl:max-w-[670px]"}/>
+                    <Description data={descriptions} size={"max-w-[355px] xl:max-w-[670px] xl:pt-5"}/>
                 </motion.div>
             </div>
             <FooterContent/>
