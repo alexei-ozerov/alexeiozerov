@@ -8,7 +8,7 @@ import {Description} from "@/components/description";
 export default function Home() {
     const links: NavProps = [
         {
-            linkPath: "/",
+            linkPath: "/art",
             linkText: "art & photography"
         },
         {

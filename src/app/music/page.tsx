@@ -19,6 +19,7 @@ export default function Page() {
 
     const descriptions: string[] = [
         "small and large ensemble compositional endeavours for a wide range of instruments that bring me joy",
+        "warning: the sub-links under the two projects are currently under construction and non-operational"
     ]
 
     return (
