@@ -12,7 +12,7 @@ export default function Page() {
         },
         {
             linkPath: "/music",
-            linkText: "recordings"
+            linkText: "audio"
         },
         {
             linkPath: "/music",
@@ -34,7 +34,7 @@ export default function Page() {
                 >
                     <Navigation data={links}/>
                     <Header linkPath={"/music"} headerText={"borrowed voices"}/>
-                    <Description data={descriptions} size={"max-w-[500px] xl:max-w-[880px] xl:pt-5"}/>
+                    <Description data={descriptions} size={"max-w-[330px] md:max-w-[500px] xl:max-w-[880px] xl:pt-5"}/>
                 </motion.div>
             </div>
             <FooterContent/>

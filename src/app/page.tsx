@@ -9,7 +9,7 @@ export default function Home() {
     const links: NavProps = [
         {
             linkPath: "/art",
-            linkText: "art & photography"
+            linkText: "art"
         },
         {
             linkPath: "/music",
@@ -35,7 +35,7 @@ export default function Home() {
                 >
                     <Navigation data={links}/>
                     <Header linkPath={"/"} headerText={"alexei ozerov"}/>
-                    <Description data={descriptions} size={"md:max-w-[390px] xl:max-w-[700px] xl:pt-5"}/>
+                    <Description data={descriptions} size={"md:max-w-[390px] xl:max-w-[700px] xl:pt-5 max-w-[270px]"}/>
                 </motion.div>
             </div>
             <FooterContent/>

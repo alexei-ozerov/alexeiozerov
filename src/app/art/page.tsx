@@ -14,7 +14,7 @@ export default function Page() {
         },
         {
             linkPath: "https://editor.p5js.org/alexei.ozerov.7/full/T_lXtokl8",
-            linkText: "generative"
+            linkText: "math"
         },
         {
             linkPath: "/art/photography",
@@ -36,7 +36,7 @@ export default function Page() {
                 >
                     <Navigation data={links}/>
                     <Header linkPath={"/"} headerText={"arts projects"}/>
-                    <Description data={descriptions} size={"max-w-[355px] xl:max-w-[670px] xl:pt-5"}/>
+                    <Description data={descriptions} size={"max-w-[258px] md:max-w-[381px] xl:max-w-[673px] xl:pt-5"}/>
                 </motion.div>
             </div>
             <FooterContent/>

@@ -32,7 +32,7 @@ export default function Page() {
                 >
                     <Navigation data={links}/>
                     <Header linkPath={"/"} headerText={"musical projects"}/>
-                    <Description data={descriptions} size={"max-w-[500px] xl:max-w-[880px] xl:pt-5"}/>
+                    <Description data={descriptions} size={"max-w-[335px] md:max-w-[500px] xl:max-w-[880px] xl:pt-5"}/>
                 </motion.div>
             </div>
             <FooterContent/>
