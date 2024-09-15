@@ -11,7 +11,7 @@ export const Description = ({ data: data, size: size }: DescriptionProps) => {
         rows.push(item);
     }
     return (
-        <div className={`flex flex-wrap text-[#f4edf0] ${size}`}>
+        <div className={`flex flex-wrap text-[#f4edf0] ${size} xl:text-xl xl:max-w-[700px]`}>
             {rows}
         </div>
     )

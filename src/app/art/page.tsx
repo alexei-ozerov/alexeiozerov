@@ -35,8 +35,8 @@ export default function Page() {
                     transition={{duration: 0.5}}
                 >
                     <Navigation data={links}/>
-                    <Header linkPath={"/"} headerText={"art & photography"}/>
-                    <Description data={descriptions} size={"max-w-[575px]"}/>
+                    <Header linkPath={"/"} headerText={"arts projects"}/>
+                    <Description data={descriptions} size={"max-w-[355px] xl:max-w-[670px]"}/>
                 </motion.div>
             </div>
             <FooterContent/>

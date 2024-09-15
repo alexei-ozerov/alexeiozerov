@@ -18,8 +18,7 @@ export default function Page() {
         }];
 
     const descriptions: string[] = [
-        "small and large ensemble compositional endeavours for a wide range of instruments that bring me joy",
-        "warning: the sub-links under the two projects are currently under construction and non-operational"
+        "small and large ensemble compositional endeavours for a wide range of instruments that bring me joy - warning: the sub-links under the two projects are currently under construction and non-operational",
     ]
 
     return (
@@ -33,7 +32,7 @@ export default function Page() {
                 >
                     <Navigation data={links}/>
                     <Header linkPath={"/"} headerText={"musical projects"}/>
-                    <Description data={descriptions} size={"max-w-[500px]"}/>
+                    <Description data={descriptions} size={"max-w-[500px] xl:max-w-[880px]"}/>
                 </motion.div>
             </div>
             <FooterContent/>

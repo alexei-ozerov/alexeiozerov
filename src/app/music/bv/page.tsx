@@ -34,7 +34,7 @@ export default function Page() {
                 >
                     <Navigation data={links}/>
                     <Header linkPath={"/music"} headerText={"borrowed voices"}/>
-                    <Description data={descriptions} size={"max-w-[500px]"}/>
+                    <Description data={descriptions} size={"max-w-[500px] xl:max-w-[880px]"}/>
                 </motion.div>
             </div>
             <FooterContent/>

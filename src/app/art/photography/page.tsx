@@ -16,7 +16,9 @@ export default function Page() {
         "i have found so much joy in bringing my cameras with me to family trips, walks, and gigs through the years and documenting my life - swipe through this photo gallery to view some of those snapshots",
     ]
 
-    const [ref] = useKeenSlider<HTMLDivElement>()
+    const [ref] = useKeenSlider<HTMLDivElement>({
+        loop: true,
+    })
 
     return (
         <div
@@ -28,33 +30,33 @@ export default function Page() {
                     transition={{duration: 0.5}}
                 >
                     <Header linkPath={"/art"} headerText={"photography"}/>
-                    <Description data={descriptions} size={"max-w-[390px]"}/>
-                    <div ref={ref} className="keen-slider max-w-[390px] self-center content-center items-center">
-                        <div className="keen-slider__slide self-center content-center items-center">
+                    <Description data={descriptions} size={"max-w-[390px] xl:max-w-[690px] xl:pt-5"}/>
+                    <div ref={ref} className="flex flex-row keen-slider max-w-[390px] xl:max-w-[700px] self-center content-center items-center justify-items-center">
+                        <div className="keen-slider__slide number-slide1 self-center content-center items-center">
                             <Image
                                 src="/DSCF9511.jpg"
-                                width={500}
-                                height={500}
+                                width={700}
+                                height={518}
                                 alt="A photograph taken of a shrub at the humber arboretum"
                                 className="border-[10px] border-[#f4edf0]"
                             />
                             <p className="italics self-center text-center pt-5">humber arboretum / fujifilm xt-5 / 2024</p>
                         </div>
-                        <div className="keen-slider__slide self-center content-center items-center">
+                        <div className="keen-slider__slide number-slide2 self-center content-center items-center">
                             <Image
                                 src="/DSCF9508.jpg"
-                                width={500}
-                                height={500}
+                                width={700}
+                                height={518}
                                 alt="A photograph taken of a flower surrounded by lily pads at the humber arboretum"
                                 className="border-[10px] border-[#f4edf0]"
                             />
                             <p className="italics self-center text-center pt-5">humber arboretum / fujifilm xt-5 / 2024</p>
                         </div>
-                        <div className="keen-slider__slide self-center content-center items-center">
+                        <div className="keen-slider__slide number-slide3 self-center content-center items-center">
                             <Image
                                 src="/DSCF9485.jpg"
-                                width={500}
-                                height={500}
+                                width={700}
+                                height={518}
                                 alt="A photograph taken of a set of benches and a blue-green structure at the humber arboretum"
                                 className="border-[10px] border-[#f4edf0]"
                             />
