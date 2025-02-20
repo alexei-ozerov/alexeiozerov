@@ -5,7 +5,8 @@ export type NavProps = { linkPath: string, linkText: string }[]
 export const Navigation = ({data}: { data: NavProps }) => {
     const rows = [];
     for (let i = 0; i < data.length; i++) {
-        const item = <Link className="hover:underline hover:underline-offset-4" href={data[i].linkPath}>{data[i].linkText}</Link>;
+        const item = <Link className="hover:underline hover:underline-offset-4"
+                           href={data[i].linkPath}>{data[i].linkText}</Link>;
         rows.push(item);
     }
     return (

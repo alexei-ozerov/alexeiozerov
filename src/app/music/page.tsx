@@ -9,11 +9,11 @@ import {Description} from "@/components/description";
 export default function Page() {
     const links: NavProps = [
         {
-            linkPath: "/music/bv",
+            linkPath: "/music",
             linkText: "borrowed voices"
         },
         {
-            linkPath: "/music/mwle",
+            linkPath: "/music",
             linkText: "many worlds large ensemble"
         }];
 
@@ -24,7 +24,7 @@ export default function Page() {
     return (
         <div
             className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-            <div className="flex flex-col gap-x-8 gap-y-2 row-start-2 justify-between flex-wrap">
+            <div className="flex flex-col gap-x-8 gap-y-2 row-start-2 justify-between mx-auto max-w-screen-md">
                 <motion.div
                     initial={{opacity: 0, scale: 0.5}}
                     animate={{opacity: 1, scale: 1}}
@@ -32,7 +32,7 @@ export default function Page() {
                 >
                     <Navigation data={links}/>
                     <Header linkPath={"/"} headerText={"musical projects"}/>
-                    <Description data={descriptions} size={"max-w-[335px] md:max-w-[500px] xl:max-w-[880px] xl:pt-5"}/>
+                    <Description data={descriptions}/>
                 </motion.div>
             </div>
             <FooterContent/>

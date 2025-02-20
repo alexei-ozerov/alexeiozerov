@@ -26,7 +26,7 @@ export default function Page() {
     return (
         <div
             className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-            <div className="flex flex-col gap-x-8 gap-y-2 row-start-2 justify-between">
+            <div className="flex flex-col gap-x-8 gap-y-2 row-start-2 justify-between mx-auto max-w-screen-md">
                 <motion.div
                     initial={{opacity: 0, scale: 0.5}}
                     animate={{opacity: 1, scale: 1}}
@@ -34,7 +34,7 @@ export default function Page() {
                 >
                     <Navigation data={links}/>
                     <Header linkPath={"/music"} headerText={"borrowed voices"}/>
-                    <Description data={descriptions} size={"max-w-[330px] md:max-w-[500px] xl:max-w-[880px] xl:pt-5"}/>
+                    <Description data={descriptions}/>
                 </motion.div>
             </div>
             <FooterContent/>

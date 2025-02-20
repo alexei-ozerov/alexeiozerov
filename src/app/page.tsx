@@ -1,3 +1,5 @@
+'use client'
+
 import * as motion from "framer-motion/client"
 
 import FooterContent from "@/components/footer";
@@ -27,19 +29,20 @@ export default function Home() {
     return (
         <div
             className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-            <div className="flex flex-col gap-x-8 gap-y-2 row-start-2 justify-between">
+            <div className="flex flex-col gap-x-8 gap-y-2 row-start-2 justify-between mx-auto max-w-screen-md">
                 <motion.div
                     initial={{opacity: 0, scale: 0.5}}
                     animate={{opacity: 1, scale: 1}}
                     transition={{duration: 0.5}}
                 >
-                    <Navigation data={links}/>
-                    <Header linkPath={"/"} headerText={"alexei ozerov"}/>
-                    <Description data={descriptions} size={"md:max-w-[390px] xl:max-w-[700px] xl:pt-5 max-w-[270px]"}/>
+                    <div className="">
+                        <Navigation data={links}/>
+                        <Header linkPath={"/"} headerText={"alexei ozerov"}/>
+                        <Description data={descriptions}/>
+                    </div>
                 </motion.div>
             </div>
             <FooterContent/>
         </div>
-
     );
 }

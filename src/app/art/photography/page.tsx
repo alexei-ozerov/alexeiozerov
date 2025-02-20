@@ -3,7 +3,7 @@
 import Image from 'next/image'
 
 import * as motion from "framer-motion/client"
-import { useKeenSlider } from "keen-slider/react"
+import {useKeenSlider} from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
 
 import FooterContent from "@/components/footer";
@@ -31,7 +31,8 @@ export default function Page() {
                 >
                     <Header linkPath={"/art"} headerText={"photography"}/>
                     <Description data={descriptions} size={"max-w-[259px] md:max-w-[390px] xl:max-w-[690px] xl:pt-5"}/>
-                    <div ref={ref} className="flex flex-row keen-slider max-w-[259px] md:max-w-[390px] xl:max-w-[700px] self-center content-center items-center justify-items-center">
+                    <div ref={ref}
+                         className="flex flex-row keen-slider max-w-[259px] md:max-w-[390px] xl:max-w-[700px] self-center content-center items-center justify-items-center">
                         <div className="keen-slider__slide number-slide1 self-center content-center items-center">
                             <Image
                                 src="/DSCF9511.jpg"
@@ -40,7 +41,8 @@ export default function Page() {
                                 alt="A photograph taken of a shrub at the humber arboretum"
                                 className="border-[10px] border-[#f4edf0]"
                             />
-                            <p className="italics self-center text-center pt-5">humber arboretum / fujifilm xt-5 / 2024</p>
+                            <p className="italics self-center text-center pt-5">humber arboretum / fujifilm xt-5 /
+                                2024</p>
                         </div>
                         <div className="keen-slider__slide number-slide2 self-center content-center items-center">
                             <Image
@@ -50,7 +52,8 @@ export default function Page() {
                                 alt="A photograph taken of a flower surrounded by lily pads at the humber arboretum"
                                 className="border-[10px] border-[#f4edf0]"
                             />
-                            <p className="italics self-center text-center pt-5">humber arboretum / fujifilm xt-5 / 2024</p>
+                            <p className="italics self-center text-center pt-5">humber arboretum / fujifilm xt-5 /
+                                2024</p>
                         </div>
                         <div className="keen-slider__slide number-slide3 self-center content-center items-center">
                             <Image
@@ -60,7 +63,8 @@ export default function Page() {
                                 alt="A photograph taken of a set of benches and a blue-green structure at the humber arboretum"
                                 className="border-[10px] border-[#f4edf0]"
                             />
-                            <p className="italics self-center text-center pt-5">humber arboretum / fujifilm xt-5 / 2024</p>
+                            <p className="italics self-center text-center pt-5">humber arboretum / fujifilm xt-5 /
+                                2024</p>
                         </div>
                     </div>
                 </motion.div>

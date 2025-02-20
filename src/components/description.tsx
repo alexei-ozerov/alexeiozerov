@@ -1,6 +1,6 @@
-type DescriptionProps = { data: string[], size: string }
+type DescriptionProps = { data: string[] }
 
-export const Description = ({ data: data, size: size }: DescriptionProps) => {
+export const Description = ({data: data}: DescriptionProps) => {
     const rows = [];
     for (let i = 0; i < data.length; i++) {
         const item = <div>
@@ -10,8 +10,9 @@ export const Description = ({ data: data, size: size }: DescriptionProps) => {
         </div>;
         rows.push(item);
     }
+
     return (
-        <div className={`flex flex-wrap text-[#f4edf0] ${size} xl:text-xl xl:max-w-[700px]`}>
+        <div className={`flex flex-wrap text-[#f4edf0] xl:pt-5 xl:text-xl`}>
             {rows}
         </div>
     )

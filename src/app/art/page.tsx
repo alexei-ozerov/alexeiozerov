@@ -9,7 +9,7 @@ import {Description} from "@/components/description";
 export default function Page() {
     const links: NavProps = [
         {
-            linkPath: "https://www.instagram.com/alexei.ozerov/",
+            linkPath: "/art",
             linkText: "blender"
         },
         {
@@ -17,18 +17,18 @@ export default function Page() {
             linkText: "math"
         },
         {
-            linkPath: "/art/photography",
+            linkPath: "/art",
             linkText: "photography"
         }];
 
     const descriptions: string[] = [
-        "bits and pieces of art which bring me joy to get to work on them, from 3d rendering, to math-based drawing, to photography",
+        "WIP PAGE: bits and pieces of art which bring me joy to get to work on them, from 3d rendering, to math-based drawing, to photography",
     ]
 
     return (
         <div
             className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-            <div className="flex flex-col gap-x-8 gap-y-2 row-start-2 justify-between flex-wrap">
+            <div className="flex flex-col gap-x-8 gap-y-2 row-start-2 justify-between mx-auto max-w-screen-md">
                 <motion.div
                     initial={{opacity: 0, scale: 0.5}}
                     animate={{opacity: 1, scale: 1}}
@@ -36,7 +36,7 @@ export default function Page() {
                 >
                     <Navigation data={links}/>
                     <Header linkPath={"/"} headerText={"arts projects"}/>
-                    <Description data={descriptions} size={"max-w-[258px] md:max-w-[381px] xl:max-w-[673px] xl:pt-5"}/>
+                    <Description data={descriptions}/>
                 </motion.div>
             </div>
             <FooterContent/>

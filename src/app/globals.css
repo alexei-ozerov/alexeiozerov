@@ -3,39 +3,41 @@
 @tailwind utilities;
 
 :root {
-  --background: #f3edef;
-  --foreground: #8b243b;
+    --background: #f3edef;
+    --foreground: #8b243b;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #f3edef;
-    --foreground: #f3edef;
-    --text: #f4edf0;
+    :root {
+        --background: #f3edef;
+        --foreground: #f3edef;
+        --text: #f4edf0;
 
-    /*temp bg*/
-    --bg: rgb(118, 205, 224);
+        /*temp bg*/
+        --bg: rgb(118, 205, 224);
 
-    /*trans colors*/
-    --pink: #f5b6c9;
-    --white: #FFFFFF;
-    --blue: #5BCEFA;
-  }
+        /*trans colors*/
+        --pink: #f5b6c9;
+        --white: #FFFFFF;
+        --blue: #5BCEFA;
+    }
 }
 
-html { height:100%; }
+html {
+    height: 100%;
+}
 
 body {
-  color: var(--background);
-  background: var(--bg);
-  font-family: Overpass, Arial, Helvetica, sans-serif;
-  height: 100vh;
+    color: var(--background);
+    background: var(--bg);
+    font-family: Overpass, Arial, Helvetica, sans-serif;
+    height: 100vh;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+    .text-balance {
+        text-wrap: balance;
+    }
 }
 
 /*
@@ -44,91 +46,138 @@ Taken from Juxtopposed's codepen project: https://codepen.io/Juxtopposed/pen/Baq
 */
 body::before,
 body::after {
-  position: fixed;
-  left: 0;
-  top: 0;
-  content: '';
-  width: 100%;
-  height: 100dvh;
-  z-index: -1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    content: '';
+    width: 100%;
+    height: 100dvh;
+    z-index: -1;
 
-  opacity: 40%;
+    opacity: 40%;
 }
-
 
 
 body::before {
-  background: #8C8C8C;
-  filter: url(#noiseFilter);
+    background: #8C8C8C;
+    filter: url(#noiseFilter);
 }
 
 .yellow {
-  background-color: var(--blobcol);
-  position: absolute;
-  top: 200px;
-  left: 100px;
-  height: 300px;
-  width: 300px;
+    background-color: var(--blobcol);
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    height: 300px;
+    width: 300px;
 
-  animation: yellow 8s infinite ease;
+    animation: yellow 8s infinite ease;
 }
 
 .green {
-  background-color: var(--blobcol);
-  position: absolute;
-  top: 80px;
-  right: -20px;
-  height: 300px;
-  width: 350px;
+    background-color: var(--blobcol);
+    position: absolute;
+    top: 80px;
+    right: -20px;
+    height: 300px;
+    width: 350px;
 
-  animation: green 8s infinite ease;
+    animation: green 8s infinite ease;
 }
 
 .red {
-  background-color: var(--blobcol);
-  position: absolute;
-  right: 0;
-  top: 300px;
-  height: 350px;
-  width: 300px;
+    background-color: var(--blobcol);
+    position: absolute;
+    right: 0;
+    top: 300px;
+    height: 350px;
+    width: 300px;
 
-  animation: red 8s infinite linear;
+    animation: red 8s infinite linear;
 }
 
 .blob-cont {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: -2;
-  height: 5px;
-  width: 5px;
-  position: relative;
-  right: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: -2;
+    height: 5px;
+    width: 5px;
+    position: relative;
+    right: 5em;
 }
 
 .blob {
-  border-radius: 200px;
-  filter: blur(50px);
+    border-radius: 200px;
+    filter: blur(50px);
 }
 
 @keyframes yellow {
-  0% {top: 200px; left: 100px; transform: scale(1);}
-  30% {top: 300px; left: 150px; transform: scale(1.2);}
-  60% {top: 100px; left: 200px; transform: scale(1.3);}
-  100% {top: 200px; left: 100px; transform: scale(1);}
+    0% {
+        top: 200px;
+        left: 100px;
+        transform: scale(1);
+    }
+    30% {
+        top: 300px;
+        left: 150px;
+        transform: scale(1.2);
+    }
+    60% {
+        top: 100px;
+        left: 200px;
+        transform: scale(1.3);
+    }
+    100% {
+        top: 200px;
+        left: 100px;
+        transform: scale(1);
+    }
 }
 
 @keyframes green {
-  0% {top: 80px; right: -20px; transform: scale(1.2);}
-  30% {top: 300px; right: -20px;transform: scale(1);}
-  60% {top: 200px; right: 100px;transform: scale(1);}
-  100% {top: 80px; right: -20px; transform: scale(1.2);}
+    0% {
+        top: 80px;
+        right: -20px;
+        transform: scale(1.2);
+    }
+    30% {
+        top: 300px;
+        right: -20px;
+        transform: scale(1);
+    }
+    60% {
+        top: 200px;
+        right: 100px;
+        transform: scale(1);
+    }
+    100% {
+        top: 80px;
+        right: -20px;
+        transform: scale(1.2);
+    }
 }
 
 @keyframes red {
-  0% {top: 250px; right: 0px; transform: scale(1);}
-  30% {top: 150px; right: 150px;transform: scale(1.4);}
-  60% {top: 250px; right: 100px;transform: scale(1);}
-  100% {top: 250px; right: 0px; transform: scale(1);}
+    0% {
+        top: 250px;
+        right: 0px;
+        transform: scale(1);
+    }
+    30% {
+        top: 150px;
+        right: 150px;
+        transform: scale(1.4);
+    }
+    60% {
+        top: 250px;
+        right: 100px;
+        transform: scale(1);
+    }
+    100% {
+        top: 250px;
+        right: 0px;
+        transform: scale(1);
+    }
 }
