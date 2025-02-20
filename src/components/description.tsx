@@ -12,7 +12,7 @@ export const Description = ({data: data}: DescriptionProps) => {
     }
 
     return (
-        <div className={`flex flex-wrap text-[#f4edf0] xl:pt-5 xl:text-xl`}>
+        <div className={`flex flex-wrap text-[#f4edf0] xl:text-xl`}>
             {rows}
         </div>
     )

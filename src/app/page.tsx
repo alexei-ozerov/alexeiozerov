@@ -1,11 +1,5 @@
-'use client'
-
-import * as motion from "framer-motion/client"
-
-import FooterContent from "@/components/footer";
-import {Header} from "@/components/header";
-import {Navigation, NavProps} from "@/components/navigation";
-import {Description} from "@/components/description";
+import {NavProps} from "@/components/navigation";
+import {Stack} from "@/components/stack";
 
 export default function Home() {
     const links: NavProps = [
@@ -26,23 +20,12 @@ export default function Home() {
         "(they / them) · trumpet player, composer, synthesizer enthusiast, open source developer, rustacean, friend ",
     ]
 
+    const header: string = "alexei ozerov"
+
+    const backLink: string = "/"
+
     return (
-        <div
-            className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-            <div className="flex flex-col gap-x-8 gap-y-2 row-start-2 justify-between mx-auto max-w-screen-md">
-                <motion.div
-                    initial={{opacity: 0, scale: 0.5}}
-                    animate={{opacity: 1, scale: 1}}
-                    transition={{duration: 0.5}}
-                >
-                    <div className="">
-                        <Navigation data={links}/>
-                        <Header linkPath={"/"} headerText={"alexei ozerov"}/>
-                        <Description data={descriptions}/>
-                    </div>
-                </motion.div>
-            </div>
-            <FooterContent/>
-        </div>
+        <Stack linkPath={backLink} headerText={header} descriptionTextArray={descriptions}
+               links={links}/>
     );
 }
