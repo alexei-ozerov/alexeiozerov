@@ -8,7 +8,7 @@ const overpass = Overpass({subsets: ['latin']})
 
 export const metadata: Metadata = {
     title: "alexei ozerov",
-    description: "Alexei Ozerov's digital nest for all things creative.",
+    description: "Alexei's digital nest for all things creative.",
 };
 
 export default function RootLayout({

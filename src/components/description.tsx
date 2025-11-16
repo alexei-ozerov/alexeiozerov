@@ -4,7 +4,7 @@ export const Description = ({data: data}: DescriptionProps) => {
     const rows = [];
     for (let i = 0; i < data.length; i++) {
         const item = <div>
-            <p className="italic text-justify pt-5 pb-5">
+            <p className="text-justify pt-5 pb-5">
                 {data[i]}
             </p>
         </div>;

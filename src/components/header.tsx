@@ -6,7 +6,7 @@ export const Header = ({linkPath: path, headerText: text}: HeaderProps) => {
     return (
         <div className="gap-8 text-center">
             <Link
-                className="text-nowrap xl:text-8xl md:text-6xl text-4xl font-bold leading-tight self-center text-[#8b243b] font-[overpass]"
+                className="text-nowrap xl:text-9xl md:text-6xl text-4xl font-bold leading-tight self-center text-[#8b243b] font-[overpass]"
                 href={path}>
                 {text}
             </Link>

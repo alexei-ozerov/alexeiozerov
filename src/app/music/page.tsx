@@ -17,7 +17,7 @@ export default function Page() {
         "small and large ensemble compositional endeavours for a wide range of instruments that bring me joy - warning: the two links are currently under construction and non-operational",
     ]
 
-    const header: string = "musical projects"
+    const header: string = "music projects"
 
     const backLink: string = "/"
 

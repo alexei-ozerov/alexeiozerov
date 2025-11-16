@@ -5,11 +5,11 @@ export default function Home() {
     const links: NavProps = [
         {
             linkPath: "/art",
-            linkText: "art"
+            linkText: "arts"
         },
         {
             linkPath: "/music",
-            linkText: "musical projects"
+            linkText: "music"
         },
         {
             linkPath: "https://github.com/alexei-ozerov",
@@ -17,7 +17,7 @@ export default function Home() {
         }];
 
     const descriptions: string[] = [
-        "(they / them) · trumpet player, composer, synthesizer enthusiast, open source developer, rustacean, friend ",
+        "(she / her) · trumpet player, composer, synthesizer enthusiast, open source developer, rustacean, friend ",
     ]
 
     const header: string = "alexei ozerov"
