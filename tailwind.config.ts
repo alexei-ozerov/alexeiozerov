@@ -8,6 +8,9 @@ const config: Config = {
     ],
     theme: {
         extend: {
+            fontFamily: {
+                mono: ['var(--font-iosevka)']
+            },
             colors: {
                 background: "var(--background)",
                 foreground: "var(--foreground)",

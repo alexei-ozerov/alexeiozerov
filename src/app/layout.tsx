@@ -1,10 +1,7 @@
 import type {Metadata} from "next";
-import {Overpass} from 'next/font/google'
+
 import "./globals.css";
-
 import Animation from "@/components/animation";
-
-const overpass = Overpass({subsets: ['latin']})
 
 export const metadata: Metadata = {
     title: "alexei ozerov",
@@ -21,7 +18,7 @@ export default function RootLayout({
 
         <body
             //className={overpass.className}
-            className={`${overpass.className} h-dvh`}
+            className={`h-dvh`}
             //className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
         <Animation/>
