@@ -21,7 +21,7 @@ export const Navigation = ({data}: { data: NavProps }) => {
         rows.push(item);
     }
     return (
-        <div className={`flex flex-row gap-8 justify-between text-[#8b243b] xl:text-xl description ${iosevka.className}`}>
+        <div className={`flex flex-row pb-0.5 gap-8 justify-between text-[#8b243b] xl:text-xl description ${iosevka.className}`}>
             {rows}
         </div>
     )

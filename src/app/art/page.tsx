@@ -5,7 +5,7 @@ import {Stack} from "@/components/stack";
 export default function Page() {
     const links: NavProps = [
         {
-            linkPath: "/art",
+            linkPath: "/art/blender",
             linkText: "blender"
         },
         {
@@ -13,17 +13,15 @@ export default function Page() {
             linkText: "math"
         },
         {
-            linkPath: "/art",
+            linkPath: "/art/photo",
             linkText: "photography"
         }];
 
-    const descriptions: string[] = [
-        "bits and pieces of art which bring me joy to get to work on them, from 3d rendering, to math-based drawing, to photography - warning: two of the links are currently under construction and non-operational",
-    ]
-
-    const header: string = "arts projects"
-
     const backLink: string = "/"
+    const header: string = "arts projects"
+    const descriptions: string[] = [
+        "bits and pieces of art which bring me joy, from 3d rendering, to algorithmic art (p5js), to photo",
+    ]
 
     return (
         <Stack linkPath={backLink} headerText={header} descriptionTextArray={descriptions}
