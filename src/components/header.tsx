@@ -11,7 +11,7 @@ const hanken = Overpass({
 type HeaderProps = { linkPath: string, headerText: string }
 
 export const Header = ({linkPath: path, headerText: text}: HeaderProps) => {
-    const newText = text.split('\n').map(str => <p>{str}</p>);
+    const newText = text.split('\n').map((str, index) => <p key={index}>{str}</p>);
     return (
         <div className="gap-8 text-center">
             <Link
