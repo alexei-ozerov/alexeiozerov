@@ -13,7 +13,7 @@ type HeaderProps = { linkPath: string, headerText: string }
 export const Header = ({linkPath: path, headerText: text}: HeaderProps) => {
     const newText = text.split('\n').map((str, index) => <p key={index}>{str}</p>);
     return (
-        <div className="gap-8 text-center">
+        <div className="gap-8 text-center pb-2">
             <Link
                 className={`text-nowrap xl:text-7xl md:text-6xl text-4xl font-bold leading-tight self-center text-[#8b243b] ${hanken.className}`}
                 href={path}>

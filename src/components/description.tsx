@@ -15,11 +15,12 @@ export const Description = ({data: data}: DescriptionProps) => {
     const rows = [];
     for (let i = 0; i < data.length; i++) {
         const item = <div>
-            <p className={`text-justify pt-5 pb-5 ${iosevka.className}`}>
+            <p className={`text-justify pb-3 ${iosevka.className}`}>
                 {data[i]}
             </p>
-        </div>;
-        rows.push(item);
+        </div>
+    ;
+    rows.push(item);
     }
 
     return (
