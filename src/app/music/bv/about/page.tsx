@@ -6,7 +6,7 @@ export default function Page() {
     const links: NavProps = [];
 
     const backLink: string = "/music/bv"
-    const header: string = "about mwle"
+    const header: string = "about borrowed voices"
     const descriptions: string[] = [
         "this page is under construction :3",
     ]
