@@ -4,15 +4,15 @@ import {Stack} from "@/components/stack";
 export default function Page() {
     const links: NavProps = [
         {
-            linkPath: "/music",
+            linkPath: "/music/mwle/about",
             linkText: "about"
         },
         {
-            linkPath: "/music",
+            linkPath: "/music/mwle/audio",
             linkText: "audio"
         },
         {
-            linkPath: "/music",
+            linkPath: "/music/mwle/documentation",
             linkText: "documentation"
         }];
 
