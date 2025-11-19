@@ -16,7 +16,7 @@ export default function Page() {
     const backLink: string = "/"
     const header: string = "music projects"
     const descriptions: string[] = [
-        "small and large ensemble compositional endeavours for a wide range of instruments that bring me joy - warning: the two links are currently under construction and non-operational",
+        "small and large ensemble compositional endeavours for a wide range of instruments that bring me joy",
     ]
 
     return (

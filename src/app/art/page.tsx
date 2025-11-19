@@ -14,13 +14,13 @@ export default function Page() {
         },
         {
             linkPath: "/art/photo",
-            linkText: "photography"
+            linkText: "photos"
         }];
 
     const backLink: string = "/"
     const header: string = "arts projects"
     const descriptions: string[] = [
-        "bits and pieces of art which bring me joy, from 3d rendering, to algorithmic art (p5js), to photo",
+        "bits and pieces of art which bring me joy, from 3d rendering, to algorithmic art (p5js), to photography",
     ]
 
     return (
